@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>프로필 페이지</title>
+		<link rel="icon" type="image/png" href="./assets/logo.ico/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="./assets/logo.ico/favicon.svg" />
+		<link rel="shortcut icon" href="./assets/logo.ico/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.ico/apple-touch-icon.png" />
+		<link rel="manifest" href="./assets/logo.ico/site.webmanifest" />
+		<link rel="stylesheet" href="./css/style.css"></link>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<section class="page" id="main_page">
+			<div id="meteor-area"></div>
+			<div class="nav_button">
+				<button onclick="changePage('about_page')">ABOUT</button>
+				<button onclick="changePage('portfolio_page')">PORTFOLIO</button>
+				<button onclick="changePage('contact_page')">CONTACT</button>
+			</div>
+		</section>
+
+		<section class="page" id="about_page">
+			<div class="header">
+				<h2>About</h2>
+				<div class="button_box">
+					<button onclick="changePage('main_page')" class="home">HOME</button>
+					<button onclick="changePage('main_page')" class="prev">PREV</button>
+					<button onclick="changePage('portfolio_page')" class="next">NEXT</button>
+				</div>
+			</div>
+			<div class="content slide-down">
+				<ul>
+					<li class="list growth">
+						<h3>History</h3>
+						<ul>
+							<li>
+								저는 배움은 언젠가 <br>
+								나를 성장시키는 <br>
+								자산이 된다고 믿습니다. <br>
+							</li>
+							<li>
+								어린 시절 배운 <br>
+								그림 덕분에 <br>
+								이후 연상 디자인을<br>
+								더 수월하게 할수있게되었던 <br>
+								경험이있습니다.<br>
+							</li>
+							<li>
+								이 경험을 통해<br>
+								"쓸모없는 배움은 없다"는 <br>
+								사실을 깨닫게 되었습니다.<br>
+							</li>
+						</ul>
+					</li>
+					<li class="list introduction">
+						<h3>Present</h3>
+						<ul>
+							<li>
+								저는 어릴 때부터 <br>
+								꾸미고 표현하는 것을 좋아해,<br>
+								디자인에 관심이 많았습니다. <br>
+							</li>
+							<li>
+								고등학교에서 <br>
+								영상디자인을 배우고 <br>
+								시각적 다지인에 흥미를 느꼈습니다,<br>
+							</li>
+							<li>
+								이후 웹디자인을 접하며<br>
+								프론트엔드 개발에 관심을 가지게 되었습니다.<br>
+							</li>
+						</ul>
+					</li>
+					<li class="competency">
+						<h3>Skills</h3>
+						<ul>
+							<li>HTML, CSS</li>
+							<li>JavaScript, React</li>
+							<li>Figma, Photoshop</li>
+							<li>Illustrator, PowerPoint</li>
+							<li>Premiere Pro</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="page" id="portfolio_page">
+			<div class="header">
+				<h2>Portfolio</h2>
+				<div class="button_box">
+					<button onclick="changePage('main_page')" class="home">HOME</button>
+					<button onclick="changePage('about_page')" class="prev">PREV</button>
+					<button onclick="changePage('contact_page')" class="next">NEXT</button>
+				</div>
+			</div>
+			<div class="content slide-down">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div>
+								<h3>Renewal</h3>
+								<a href="https://jun5623.github.io/mabinogimobile/">
+									<img src="./imgs/profile01.png">
+									<div class="info">
+										<h4>Mabinogi mobile</h4>
+										<p>HTML과 CSS를 활용해 리뉴얼한 마비노기모바일 리뉴얼 사이트입니다.</p>
+										<span>HTML , CSS , JavaScript , jQuery , Swiper</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<h3>clone coding</h3>
+								<a href="https://jun5623.github.io/lotte/">
+									<img src="./imgs/profile02.png">
+									<div class="info">
+										<h4>Lotteria mobile</h4>
+										<p>React로 Tab과 Route를 활용해 본래 사이트의 기능을 구현한 모바일 사이트입니다.</p>
+										<span>React , useState , Tabs , Route</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<h3>Renewal</h3>
+								<a href="https://jun5623.github.io/IncheonAirport/">
+									<img src="./imgs/profile03.png">
+									<div class="info">
+										<h4>Incheon Airport</h4>
+										<p>HTML을 기반으로 JavaScript를 활용해 사용자 경험을 개선한 리뉴얼 사이트입니다.</p>
+										<span>HTML , CSS , JavaScript , jQuery , Swiper</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<h3>Renewal</h3>
+								<a href="https://jun5623.github.io/outback/">
+									<img src="./imgs/profile04.png">
+									<div class="info">
+										<h4>Outback</h4>
+										<p>리디렉션 시스템을 사용해 사용자의 환경에 맞는 사이트 버전으로 자동 이동하는 리뉴얼 사이트입니다.</p>
+										<span>HTML , CSS , JavaScript , Swiper </span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<h3>Interactive</h3>
+								<a href="https://jun5623.github.io/mai/">
+									<img src="./imgs/profile05.png">
+									<div class="info">
+										<h4>Mai</h4>
+										<p>jQuery를 활용하여 동적인 기능을 제공하는 예매 사이트입니다.</p>
+										<span>HTML , CSS , JavaScript , jQuery</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page" id="contact_page">
+			<div class="header">
+				<h2>CONTACT</h2>
+				<div class="button_box">
+					<button onclick="changePage('main_page')" class="home">HOME</button>
+					<button onclick="changePage('portfolio_page')" class="prev">PREV</button>
+				</div>
+			</div>
+			<div class="content slide-down">
+				<button class="contact"></button>
+				<div class="contact_box">
+					<div>
+						<span id="mail"></span>
+						jun970242@gmail.com
+					</div>
+					<div>
+						<span id="coll"></span>
+						010 - 7417 - 7210
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>

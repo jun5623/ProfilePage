@@ -1,0 +1,15 @@
+@charset "utf-8";
+body, header, footer, section, article, nav, aside, div, p, h1, h2, h3, h4, h5, h6,
+ul, ol, li, dl, dt, dd, p, blockquote,form, fieldset, legend, input, select, textarea,
+button, table, caption, thead, tbody, tfoot, th, td, figure, figcaption{margin:0px; padding:0px;}
+img{display:block; border:0px;}
+ul, ol{list-style:none;}
+a{text-decoration:none;}
+h1, h2, h3, h4, h5, h6{font-size:1em;}
+address, em, i{font-style:normal;}
+q::before, q::after{content:"";}
+table{border-collapse:collapse; border-spacing:0px;}
+caption, legend, hr{display:none;}
+textarea{resize:none;}
+fieldset{border:0px none;}
+input, select, button, textarea{box-sizing: border-box;}
